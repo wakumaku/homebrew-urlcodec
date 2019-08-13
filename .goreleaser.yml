@@ -13,3 +13,27 @@ archives:
 checksum:
   name_template: "{{ .ProjectName }}_checksums.txt"
   algorithm: sha256
+
+brews:
+  -
+    name: urlcodec
+
+    ids:
+    - urlcodec
+
+    github:
+      owner: wakumaku
+      name: urlcodec
+
+    url_template: "https://github.com/wakumaku/urlcodec/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
+
+    commit_author:
+      name: wakumaku
+      email: wakumaku@gmail.com
+
+    homepage: "https://github.com/wakumaku/urlcodec"
+
+    description: "URL Encode and Decode CLI"
+
+    install: |
+      bin.install "program"
