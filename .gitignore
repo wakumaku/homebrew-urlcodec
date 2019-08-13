@@ -4,6 +4,8 @@
 *.dll
 *.so
 *.dylib
+dist/
+.goreleaser_github_token*
 
 # Test binary, build with `go test -c`
 *.test

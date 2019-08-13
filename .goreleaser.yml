@@ -1,0 +1,13 @@
+project_name: urlcodec
+
+env_files:
+  github_token: ./.goreleaser_github_token
+
+builds:
+- binary: urlcodec
+
+archives:
+  -
+    builds:
+    - default
+
