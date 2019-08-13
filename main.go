@@ -9,7 +9,18 @@ import (
 	"strings"
 )
 
+var (
+	version = "dev"
+	commit  = "none"
+	date    = "unknown"
+)
+
 func main() {
+
+	if len(os.Args) == 2 && os.Args[1] == "version" {
+		fmt.Printf("%v, commit %v, built at %v", version, commit, date)
+		return
+	}
 
 	var encodeURL bool
 	flag.BoolVar(&encodeURL, "e", false, "Encodes the given URL/String")
