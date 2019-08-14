@@ -36,4 +36,4 @@ brews:
     description: "URL Encode and Decode CLI"
 
     install: |
-      bin.install "program"
+      bin.install "urlcodec"
