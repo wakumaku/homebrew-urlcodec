@@ -23,15 +23,15 @@ brews:
 
     github:
       owner: wakumaku
-      name: urlcodec
+      name: homebrew-urlcodec
 
-    url_template: "https://github.com/wakumaku/urlcodec/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
+    url_template: "https://github.com/wakumaku/homebrew-urlcodec/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
 
     commit_author:
       name: wakumaku
       email: wakumaku@gmail.com
 
-    homepage: "https://github.com/wakumaku/urlcodec"
+    homepage: "https://github.com/wakumaku/homebrew-urlcodec"
 
     description: "URL Encode and Decode CLI"
 
